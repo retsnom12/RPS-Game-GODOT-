@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://da2l2rk4x33ys"]
+
+[ext_resource type="Script" path="res://scripts/gamemanager.gd" id="1_eqber"]
+[ext_resource type="Texture2D" uid="uid://s8n5rlfgvpho" path="res://assets/bg.jpg" id="1_ro7h8"]
+[ext_resource type="PackedScene" uid="uid://dftt4lojw2p6h" path="res://scenes/tas.tscn" id="2_puv8f"]
+[ext_resource type="PackedScene" uid="uid://txs33y4douig" path="res://scenes/kgt.tscn" id="3_jddvm"]
+[ext_resource type="PackedScene" uid="uid://bp07siso0annt" path="res://scenes/mks.tscn" id="4_nxyem"]
+[ext_resource type="FontFile" uid="uid://cevat1jh3v408" path="res://assets/Bagura Light.ttf" id="5_x8jyv"]
+
+[node name="game" type="Node2D"]
+
+[node name="gamemanager" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("1_eqber")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(572, 324)
+
+[node name="Bg" type="Sprite2D" parent="."]
+position = Vector2(557, 323)
+scale = Vector2(0.550391, 0.548125)
+texture = ExtResource("1_ro7h8")
+
+[node name="tas" parent="." instance=ExtResource("2_puv8f")]
+position = Vector2(55, 227)
+
+[node name="kgt" parent="." instance=ExtResource("3_jddvm")]
+position = Vector2(422, 261)
+
+[node name="mks" parent="." instance=ExtResource("4_nxyem")]
+position = Vector2(869, 282)
+
+[node name="baslik" type="Label" parent="."]
+offset_left = 33.0
+offset_top = 53.0
+offset_right = 1265.0
+offset_bottom = 231.0
+theme_override_fonts/font = ExtResource("5_x8jyv")
+theme_override_font_sizes/font_size = 110
+text = "ROCK-PAPER-SCISSORS"
+
+[node name="sonuc" type="Label" parent="."]
+offset_left = 480.0
+offset_top = 531.0
+offset_right = 1122.0
+offset_bottom = 611.0
+theme_override_fonts/font = ExtResource("5_x8jyv")
+theme_override_font_sizes/font_size = 64

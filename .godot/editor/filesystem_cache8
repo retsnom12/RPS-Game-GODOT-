@@ -1,0 +1,25 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1727410192
+export_presets.cfg::TextFile::-1::1727410158::0::1::::<><>::
+icon.svg::CompressedTexture2D::4285873491546504707::1727404874::1727404883::1::::<><>::
+mks.gd::GDScript::-1::1727409141::0::1::::<>Area2D<>::
+::res://assets/::1727407135
+Bagura Light.ttf::FontFile::5096983984724448623::1723659766::1727407135::1::::<><>::
+bg.jpg::CompressedTexture2D::1332367456217505568::1727406846::1727406848::1::::<><>::
+bkgrnd.png::CompressedTexture2D::2869050228806233365::1727406490::1727406491::1::::<><>::
+mks1.png::CompressedTexture2D::3440186587101711473::1727404734::1727404883::1::::<><>::
+mks2.png::CompressedTexture2D::7734705819464765285::1727404742::1727404883::1::::<><>::
+mks3.png::CompressedTexture2D::5623328143178760878::1727404751::1727404883::1::::<><>::
+mks4.png::CompressedTexture2D::3382219736494405856::1727404763::1727404883::1::::<><>::
+paper.png::CompressedTexture2D::6162173073975786540::1727405909::1727405913::1::::<><>::
+RockPack1080x1080.png::CompressedTexture2D::1882365718841297480::1655135162::1727405567::1::::<><>::
+::res://scenes/::1727410115
+game.tscn::PackedScene::7215717263489273762::1727410115::0::1::::<><>::res://scripts/gamemanager.gd<>uid://s8n5rlfgvpho::::res://assets/bg.jpg<>uid://dftt4lojw2p6h::::res://scenes/tas.tscn<>uid://txs33y4douig::::res://scenes/kgt.tscn<>uid://bp07siso0annt::::res://scenes/mks.tscn<>uid://cevat1jh3v408::::res://assets/Bagura Light.ttf
+kgt.tscn::PackedScene::1382213134616443558::1727410115::0::1::::<><>::uid://ct2adckfc1vce::::res://assets/paper.png<>res://scripts/kgt.gd
+mks.tscn::PackedScene::3492838318836696657::1727410115::0::1::::<><>::uid://bpapmujbdcc3r::::res://assets/mks1.png<>res://scripts/mks.gd<>uid://dig0qe4hsjrmb::::res://assets/mks2.png<>uid://cmd8nmidmyjx3::::res://assets/mks3.png<>uid://bogmwuvxjlpme::::res://assets/mks4.png
+tas.tscn::PackedScene::7550635457305916857::1727410115::0::1::::<><>::res://scripts/tas.gd<>uid://123j2mghee0w::::res://assets/RockPack1080x1080.png
+::res://scripts/::1727410101
+gamemanager.gd::GDScript::-1::1727410101::0::1::::<>Node<>::
+kgt.gd::GDScript::-1::1727409266::0::1::::<>Area2D<>::
+mks.gd::GDScript::-1::1727409307::0::1::::<>Area2D<>::
+tas.gd::GDScript::-1::1727408998::0::1::::<>Area2D<>::

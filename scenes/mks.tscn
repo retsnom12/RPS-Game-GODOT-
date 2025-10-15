@@ -1,0 +1,63 @@
+[gd_scene load_steps=12 format=3 uid="uid://bp07siso0annt"]
+
+[ext_resource type="Texture2D" uid="uid://bpapmujbdcc3r" path="res://assets/mks1.png" id="1_43qnj"]
+[ext_resource type="Script" path="res://scripts/mks.gd" id="1_xel6i"]
+[ext_resource type="Texture2D" uid="uid://dig0qe4hsjrmb" path="res://assets/mks2.png" id="2_0o8m1"]
+[ext_resource type="Texture2D" uid="uid://cmd8nmidmyjx3" path="res://assets/mks3.png" id="3_occet"]
+[ext_resource type="Texture2D" uid="uid://bogmwuvxjlpme" path="res://assets/mks4.png" id="4_up80c"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vr5pw"]
+atlas = ExtResource("1_43qnj")
+region = Rect2(0, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rbqk3"]
+atlas = ExtResource("2_0o8m1")
+region = Rect2(0, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jpywl"]
+atlas = ExtResource("3_occet")
+region = Rect2(0, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ebknh"]
+atlas = ExtResource("4_up80c")
+region = Rect2(0, 0, 250, 250)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cnx2c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vr5pw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rbqk3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jpywl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ebknh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mwrjj"]
+size = Vector2(154.75, 215.5)
+
+[node name="mks" type="Area2D"]
+script = ExtResource("1_xel6i")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(106.375, 111.188)
+scale = Vector2(1.245, 1.1825)
+sprite_frames = SubResource("SpriteFrames_cnx2c")
+autoplay = "default"
+frame = 1
+frame_progress = 0.0293534
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(101.625, 111.25)
+shape = SubResource("RectangleShape2D_mwrjj")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
